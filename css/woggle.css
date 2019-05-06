@@ -331,7 +331,7 @@ input,
 select,
 optgroup,
 textarea {
-  color: #404040;
+  color: #333333;
   font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -481,7 +481,7 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-  color: #666;
+  color: #666666;
   border: 1px solid #ccc;
   border-radius: 3px;
   padding: 3px; }
@@ -516,11 +516,11 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
+  color: #00A794; }
   a:visited {
-    color: purple; }
+    color: #7413dc; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #7413dc; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
