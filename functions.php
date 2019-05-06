@@ -121,6 +121,8 @@ add_action( 'widgets_init', 'woggle_widgets_init' );
  */
 function woggle_scripts() {
 	// wp_enqueue_style( 'woggle-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'google', 'https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,900', array(), '1.0', null );
+
 	wp_enqueue_style( 'woggle', get_template_directory_uri() . '/css/woggle.css', array(), '0.1', $media = 'all' );
 
 	wp_enqueue_script( 'woggle-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
