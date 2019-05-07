@@ -8,7 +8,7 @@
     width: 96%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1.5rem 0;
+    padding: $spacing 0;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -19,7 +19,7 @@
     font-size: 3rem;
     font-weight: 400;
     line-height: 1;
-    margin: 0 0 1.5rem;
+    margin: 0 0 $spacing;
 
     a {
         text-decoration: none;
@@ -29,7 +29,7 @@
 
 .site-description {
     color: $scout-teal;
-    font-size: 1.5rem;
+    font-size: $spacing;
     font-weight: 700;
     line-height: 1;
     margin: 0;
@@ -43,6 +43,10 @@
 
         &__text {
             text-align: left;
+
+            .custom-logo-link + & {
+                margin-left: $spacing;
+            }
         }
 
     }

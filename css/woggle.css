@@ -690,7 +690,7 @@ a {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 0 1.5em;
+  margin: 0 0 1.5rem;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
@@ -767,6 +767,8 @@ a {
     text-align: left; }
     .site-branding__text {
       text-align: left; }
+      .custom-logo-link + .site-branding__text {
+        margin-left: 1.5rem; }
 
   .site-description {
     margin: 0; } }
