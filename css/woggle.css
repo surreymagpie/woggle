@@ -533,7 +533,9 @@ a {
   clear: both;
   display: block;
   float: left;
-  width: 100%; }
+  width: 100%;
+  background-color: #00A794;
+  color: white; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -560,8 +562,13 @@ a {
     float: left;
     position: relative; }
   .main-navigation a {
+    color: inherit;
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 1em 1.5rem;
+    font-weight: 700; }
+    .main-navigation a:first-of-type {
+      margin-left: -1.5rem; }
 
 /* Small menu. */
 .menu-toggle,
@@ -586,6 +593,11 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+.menu-main-container {
+  width: 96%;
+  max-width: 1200px;
+  margin: 0 auto; }
 
 /*--------------------------------------------------------------
 # Accessibility

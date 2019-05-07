@@ -3,6 +3,8 @@
 	display: block;
 	float: left;
 	width: 100%;
+	background-color: $scout-teal;
+	color: white;
 
 	ul {
 		display: none;
@@ -59,8 +61,15 @@
 	}
 
 	a {
+		color: inherit;
 		display: block;
 		text-decoration: none;
+		padding: 1em 1.5rem;
+		font-weight: 700;
+
+		&:first-of-type {
+		    margin-left: -1.5rem;
+		}
 	}
 
 	.current_page_item > a,
@@ -104,4 +113,10 @@
 		text-align: right;
 		width: 50%;
 	}
+}
+
+.menu-main-container {
+    width: 96%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
