@@ -534,7 +534,7 @@ a {
   display: block;
   float: left;
   width: 100%;
-  background-color: #00A794;
+  background-color: #7413dc;
   color: white; }
   .main-navigation ul {
     display: none;
@@ -738,13 +738,15 @@ a {
   width: 96%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 1.5rem 0;
   display: flex;
   flex-direction: column;
   text-align: center; }
 
 .site-title {
+  color: #7413dc;
   font-size: 3rem;
-  font-weight: 900;
+  font-weight: 400;
   line-height: 1;
   margin: 0 0 1.5rem; }
   .site-title a {
@@ -753,10 +755,10 @@ a {
 
 .site-description {
   color: #00A794;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1;
-  margin: 0 0 1.5rem; }
+  margin: 0; }
 
 @media screen and (min-width: 800px) {
   .site-branding {
@@ -764,8 +766,7 @@ a {
     align-items: center;
     text-align: left; }
     .site-branding__text {
-      margin-left: auto;
-      text-align: right; }
+      text-align: left; }
 
   .site-description {
     margin: 0; } }
