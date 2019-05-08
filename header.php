@@ -25,7 +25,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'woggle' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
+		<div class="site-branding container">
 			<?php
 			the_custom_logo(); ?>
 			<div class="site-branding__text">
@@ -53,9 +53,10 @@
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
 				'menu_id'        => 'primary-menu',
+				'container_class'=> 'container'
 			) );
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<main id="content" class="site-content container">

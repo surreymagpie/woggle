@@ -687,6 +687,14 @@ a {
   clear: both; }
 
 /*--------------------------------------------------------------
+# Utitily classes
+--------------------------------------------------------------*/
+.container {
+  width: 94%;
+  max-width: 75rem;
+  margin: 0 auto; }
+
+/*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
 .widget {
@@ -735,9 +743,6 @@ a {
   vertical-align: bottom; }
 
 .site-branding {
-  width: 96%;
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 1.5rem 0;
   display: flex;
   flex-direction: column;
