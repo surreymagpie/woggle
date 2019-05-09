@@ -1,8 +1,22 @@
+.widget-area {
+    background-color: $scout-grey-5;
+    padding: ($spacing *2) $spacing-small;
+}
 .widget {
 	margin: 0 0 $spacing;
+	border-bottom: 2px solid $scout-teal;
+	padding: $spacing-small;
+	background-color: white;
+	box-shadow: $box-shadow;
 
 	/* Make sure select elements fit in widgets. */
 	select {
 		max-width: 100%;
 	}
+}
+
+.widget-title {
+	font-size: 1.8rem;
+	color: $scout-teal;
+	margin: 0;
 }
