@@ -670,8 +670,6 @@ a {
 .comment-content:after,
 .site-header:before,
 .site-header:after,
-.site-content:before,
-.site-content:after,
 .site-footer:before,
 .site-footer:after {
   content: "";
@@ -682,7 +680,6 @@ a {
 .entry-content:after,
 .comment-content:after,
 .site-header:after,
-.site-content:after,
 .site-footer:after {
   clear: both; }
 
@@ -697,11 +694,24 @@ a {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+.widget-area {
+  background-color: #f2f2f2;
+  padding: 3rem 0.75rem; }
+
 .widget {
   margin: 0 0 1.5rem;
+  border-bottom: 2px solid #00A794;
+  padding: 0.75rem;
+  background-color: white;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
+
+.widget-title {
+  font-size: 1.8rem;
+  color: #00A794;
+  margin: 0; }
 
 /*--------------------------------------------------------------
 # Content
@@ -709,6 +719,20 @@ a {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+@media screen and (min-width: 50rem) {
+  .site-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1.5rem; } }
+
+.content-area {
+  padding-top: 3rem; }
+
+.entry-title {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem; }
+
 .sticky {
   display: block; }
 
