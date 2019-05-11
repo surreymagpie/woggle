@@ -378,6 +378,13 @@ p, ul, ol, pre, table, blockquote {
   margin-top: 0rem;
   margin-bottom: 1.5rem; }
 
+blockquote {
+  margin-left: 0;
+  padding-left: 1.5rem;
+  padding-right: 0.5rem;
+  border-left: 2px solid #00A794;
+  border-right: 2px solid #00A794; }
+
 dfn, cite, em, i {
   font-style: italic; }
 
