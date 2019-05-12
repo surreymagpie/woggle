@@ -13,10 +13,42 @@
 	select {
 		max-width: 100%;
 	}
+
+	ul {
+		margin: 0;
+		list-style: none;
+		padding-left: 0;
+	}
+
+	li {
+		display: grid;
+		grid-template-columns: auto 1fr auto;
+
+		&::before {
+			content: '\2022';
+			margin-right: 4px;
+		}
+	}
+
+	select {
+		width: 100%;
+		display: block;
+		color:$scout-teal;
+		background-color: $scout-grey-5;
+		border: 2px solid $scout-teal;
+		padding: 0.75rem;
+		border-radius: 4px;
+	}
+	
+	option {
+		box-sizing: border-box;
+		padding: 0;
+	}
 }
 
 .widget-title {
-	font-size: 1.8rem;
+	font-size: 1.5rem;
+	line-height: 1;
 	color: $scout-teal;
 	margin: $spacing-small 0 $spacing;
 }
