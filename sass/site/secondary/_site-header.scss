@@ -1,3 +1,6 @@
+.site-header {
+    // margin-bottom: $spacing;
+}
 .custom-logo {
     width: auto;
     height: 10rem;
@@ -5,9 +8,6 @@
 }
 
 .site-branding {
-    width: 96%;
-    max-width: 1200px;
-    margin: 0 auto;
     padding: $spacing 0;
     display: flex;
     flex-direction: column;

@@ -1,13 +1,18 @@
-p {
-	margin-bottom: 1.5em;
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0rem;
+  margin-bottom: 1.5rem;
+}
+
+blockquote {
+  margin-left: 0;
+  padding-left: 1.5rem;
+  padding-right: 0.5rem;
+  border-left: 2px solid $scout-teal;
+  border-right: 2px solid $scout-teal;
 }
 
 dfn, cite, em, i {
 	font-style: italic;
-}
-
-blockquote {
-	margin: 0 1.5em;
 }
 
 address {
@@ -19,10 +24,10 @@ pre {
 	font-family: $font__pre;
 	@include font-size(0.9375);
 	line-height: $font__line-height-pre;
-	margin-bottom: 1.6em;
 	max-width: 100%;
 	overflow: auto;
 	padding: 1.6em;
+	white-space: pre-wrap;
 }
 
 code, kbd, tt, var {
