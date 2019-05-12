@@ -792,7 +792,8 @@ a {
 .entry-title {
   color: #00A794;
   margin-top: 0;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  word-wrap: break-word; }
 
 .sticky {
   display: block; }
