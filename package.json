@@ -1,0 +1,24 @@
+{
+  "name": "woggle",
+  "version": "1.0.0",
+  "description": "A modern theme for wordpress styled for UK scout websites, based on 2018 brand guidelines ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surreymagpie/woggle.git"
+  },
+  "author": "Rob Curtis",
+  "license": "GPL v2+",
+  "bugs": {
+    "url": "https://github.com/surreymagpie/woggle/issues"
+  },
+  "homepage": "https://github.com/surreymagpie/woggle#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
