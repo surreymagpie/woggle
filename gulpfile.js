@@ -11,6 +11,7 @@ function css() {
 
 function watch_files() {
 	watch('sass/**/*.s(a|c)ss', css);
+	watch('(*.php|inc/*.php)', reload);
 }
 
 function browsersync(done) {
@@ -19,6 +20,11 @@ function browsersync(done) {
 	});
 	done();
 };
+
+function reload(done) {
+	browserSync.reload();
+	done();
+}
 
 exports.css = css;
 exports.default = series(css, browsersync, watch_files);
