@@ -1,54 +1,63 @@
-.widget-area {
-    background-color: $scout-grey-5;
-    padding: ($spacing *2) $spacing-small;
-}
-.widget {
-	margin: 0 0 $spacing;
-	border-bottom: 2px solid $scout-teal;
-	padding: $spacing-small;
-	background-color: white;
-	box-shadow: $box-shadow;
+.widget
+	margin: 0 0 $spacing
+	padding: $spacing-small
+
+	ul
+		margin: 0
+		list-style: none
+		padding-left: 0
+
+	li
+		display: grid
+		grid-template-columns: auto 7em
+    margin-bottom: 0.5em
+
+	a
+		text-decoration: none
 
 	/* Make sure select elements fit in widgets. */
-	select {
-		max-width: 100%;
-	}
+	select
+		width: 100%
+		display: block
+		color: $scout-teal
+		background-color: $scout-grey-5
+		border: 2px solid $scout-teal
+		padding: 0.75rem
+		border-radius: 4px
 
-	ul {
-		margin: 0;
-		list-style: none;
-		padding-left: 0;
-	}
+	option
+		box-sizing: border-box
+		padding: 0
 
-	li {
-		display: grid;
-		grid-template-columns: auto 1fr auto;
+.widget-title
+	font-size: 1.5rem
+	line-height: 1
+	color: $scout-teal
+	margin: $spacing-small 0 $spacing
 
-		&::before {
-			content: '\2022';
-			margin-right: 4px;
-		}
-	}
+.post-date
+	text-align: right
 
-	select {
-		width: 100%;
-		display: block;
-		color:$scout-teal;
-		background-color: $scout-grey-5;
-		border: 2px solid $scout-teal;
-		padding: 0.75rem;
-		border-radius: 4px;
-	}
-	
-	option {
-		box-sizing: border-box;
-		padding: 0;
-	}
-}
+/**
+ Styling for main sidebar widgets
+ */
+.widget-area
+  padding: ($spacing *2) $spacing-small
+  background-color: white
 
-.widget-title {
-	font-size: 1.5rem;
-	line-height: 1;
-	color: $scout-teal;
-	margin: $spacing-small 0 $spacing;
-}
+  .widget
+    border-bottom: 2px solid $scout-teal
+
+/**
+ Styling for footer sidebar widgets
+ */
+.footer-widget-area
+	display: grid
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+	grid-gap: $spacing
+
+	.widget
+		height: 100%
+
+	.widget-title
+		color: white

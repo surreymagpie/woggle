@@ -740,29 +740,20 @@ a {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-.widget-area {
-  background-color: #f2f2f2;
-  padding: 3rem 0.75rem; }
-
 .widget {
   margin: 0 0 1.5rem;
-  border-bottom: 2px solid #00A794;
   padding: 0.75rem;
-  background-color: white;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   /* Make sure select elements fit in widgets. */ }
-  .widget select {
-    max-width: 100%; }
   .widget ul {
     margin: 0;
     list-style: none;
     padding-left: 0; }
   .widget li {
     display: grid;
-    grid-template-columns: auto 1fr auto; }
-    .widget li::before {
-      content: '\2022';
-      margin-right: 4px; }
+    grid-template-columns: auto 7em;
+      grid-template-columns-margin-bottom: 0.5em; }
+  .widget a {
+    text-decoration: none; }
   .widget select {
     width: 100%;
     display: block;
@@ -780,6 +771,30 @@ a {
   line-height: 1;
   color: #00A794;
   margin: 0.75rem 0 1.5rem; }
+
+.post-date {
+  text-align: right; }
+
+/**
+ Styling for main sidebar widgets
+ */
+.widget-area {
+  padding: 3rem 0.75rem;
+  background-color: white; }
+  .widget-area .widget {
+    border-bottom: 2px solid #00A794; }
+
+/**
+ Styling for footer sidebar widgets
+ */
+.footer-widget-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1.5rem; }
+  .footer-widget-area .widget {
+    height: 100%; }
+  .footer-widget-area .widget-title {
+    color: white; }
 
 /*--------------------------------------------------------------
 # Content
@@ -804,10 +819,6 @@ a {
 
 .sticky {
   display: block; }
-
-.post,
-.page {
-  margin: 0 0 1.5em; }
 
 .updated:not(.published) {
   display: none; }
@@ -869,6 +880,14 @@ a {
         margin-left: 1.5rem; }
   .site-description {
     margin: 0; } }
+
+.site-footer {
+  background: #00A794;
+  color: white;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem; }
+  .site-footer a {
+    color: inherit; }
 
 /*--------------------------------------------------------------
 # Infinite scroll
