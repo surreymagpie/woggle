@@ -8,9 +8,7 @@
 		padding-left: 0
 
 	li
-		display: grid
-		grid-template-columns: auto 7em
-    margin-bottom: 0.5em
+		margin-bottom: 0.5em
 
 	a
 		text-decoration: none
@@ -61,3 +59,17 @@
 
 	.widget-title
 		color: white
+
+/**
+	Stlying for specific widgets
+ */
+.widget_archive,
+.widget_categories
+	li
+		display: flex
+		justify-content: space-between
+
+.widget_recent_entries
+	li
+		display: grid
+		grid-template-columns: 1fr auto

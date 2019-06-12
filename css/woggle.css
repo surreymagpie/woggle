@@ -749,9 +749,7 @@ a {
     list-style: none;
     padding-left: 0; }
   .widget li {
-    display: grid;
-    grid-template-columns: auto 7em;
-      grid-template-columns-margin-bottom: 0.5em; }
+    margin-bottom: 0.5em; }
   .widget a {
     text-decoration: none; }
   .widget select {
@@ -795,6 +793,18 @@ a {
     height: 100%; }
   .footer-widget-area .widget-title {
     color: white; }
+
+/**
+	Stlying for specific widgets
+ */
+.widget_archive li,
+.widget_categories li {
+  display: flex;
+  justify-content: space-between; }
+
+.widget_recent_entries li {
+  display: grid;
+  grid-template-columns: 1fr auto; }
 
 /*--------------------------------------------------------------
 # Content
