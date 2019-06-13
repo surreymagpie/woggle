@@ -907,6 +907,7 @@ html, .site {
 .site-footer {
   background: #00A794;
   color: white;
+  margin-top: 3rem;
   padding-top: 3rem;
   padding-bottom: 1.5rem; }
   .site-footer a {
