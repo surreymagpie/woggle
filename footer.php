@@ -14,6 +14,8 @@
 	</main><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
+		<?php /** If any widgets are placed in the footer, load them here */ ?>
+		<?php get_template_part( 'template-parts/footer', 'sidebars' ); ?>
 		<div class="site-info container">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'woggle' ) ); ?>">
 				<?php
